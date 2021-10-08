@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css Units</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Absolute Units:Units that will be the same size no matter where they are on the screen or what div/section 
+            they're nested inside of. Examples are:pixels, inches, centimeters
+        </h1>
+        <p>Pixels: By far the most commonly used absolute unit. Not recommended for responsive websites</p>
+        <h1>
+            Relative units: Examples:EM,REM,VH,VW,%
+        </h1>
+        <p>Percentages:Relative to another value usually the parent</p>
+        <p>Example: width: 50% - that means the element we're giving this 50% width too will be 50% of it's parent 
+            <br> Line-height: 50% half the font-size of the element </p>
+        <section id="image-percentage">
+            <img id="tombrady" src="tombrady.jpeg" alt="tom brady picture">
+            <img id="tombrady" src="tombrady.jpeg" alt="tom brady picture">
+            <img id="tombrady" src="tombrady.jpeg" alt="tom brady picture">
+            <p>Here we make the section 1200 pixels in width but we make each image take up 
+                33% of that 1200 pixels so we're able to fix 3 images into this section
+            </p>
+        </section>
+        <section id="em">
+            <h1>EM:With font-size, 1 em equals the font-size of the parent. 2 em's is twice the font size of the parent,etc
+                <br>With other properties, 1em is equal to the computed font-size of the element itself.
+                <br>You can run into trouble though if you have nested elements because as you go deeper in the nest the size will grow
+            </h1>
+            <h1>This font size is set to 20px</h1>
+            <h2 id="em-h2">This font size is set to 3 em which will be 60px</h2>
+        </section>
+        <section id="rem">
+            <h1>Root EMS: relative to the root html element's font-size. If the root font-size is 20px 1 rem is always
+                20px no matter how many elements get nested in. Way easier to work with than EM's
+            </h1>
+        </section>
+        <section>
+            <h1>vw & vh</h1>
+            <p>Viewport height and viewport width</p>
+            <p>1vw is 1% of the width of the viewport and same for height 100 vw would take up
+                the entire width of the screen
+            </p>
+            <p>Vh and vw are useful when designing mobile responsive sites</p>
+        </section>
+        <section id="vw">
+            <p>This section will take up half of the veiwport width</p>
+            <p>Can't do height because I have so many things on this page but height is the same way</p>
+        </section>
+        <section>
+            <h1>When to use</h1>
+            <p>PX: avoid for font-sizes. Use for small details like borders and shadows</p>
+            <p>REm/EM: use for font-sizes and padding/margin</p>
+            <p>% useful for defining layouts and widths inside of a container</p>
+            <p>vh/vw useful for larger layout concerns</p>
+        </section>
+    </body>
+</html>

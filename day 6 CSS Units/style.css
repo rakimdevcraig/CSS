@@ -1,0 +1,22 @@
+#image-percentage {
+	width: 1200px;
+	border: 1px solid red;
+}
+
+#tombrady {
+	width: 33%;
+}
+
+#em {
+	font-size: 20px;
+}
+
+#em-h2 {
+	font-size: 3em;
+}
+
+#vw {
+	width: 50vw;
+	background-color: blue;
+	color: white;
+}
