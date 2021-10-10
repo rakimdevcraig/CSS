@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flexbox intro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <p>When display:flex is set the main axis is set from left to right so that's the way the content flows</p>
+    <p>This is also flex-direction:row which is set by default</p>
+    <body>
+        <section class="container">
+        <section class="box box-1">1</section>
+        <section class="box box-2">2</section>
+        <section class="box box-3">3</section>
+        <section class="box box-4">4</section>
+        <section class="box box-5">5</section>
+        <section class="box box-6">6</section>
+        <section class="box box-7">7</section>
+        <section class="box box-8">8</section>
+        <section class="box box-9">9</section>
+        </section>
+        <p>flex-direction:row-reverse will reverse the content from left to right</p>
+        <section class="container-2">
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+            <section class="box box-5">5</section>
+            <section class="box box-6">6</section>
+            <section class="box box-7">7</section>
+            <section class="box box-8">8</section>
+            <section class="box box-9">9</section> 
+        </section>
+        <section class="container-3">
+            <p>flex-direction:column will make the content flow from top to bottom column-reverse would be bottom to top</p>
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+            <section class="box box-5">5</section>
+            <section class="box box-6">6</section>
+            <section class="box box-7">7</section>
+            <section class="box box-8">8</section>
+            <section class="box box-9">9</section> 
+        </section>
+        <p>flex-wrap:wrap the content will wrap to the next line below if there's not enough room on the current line</p>
+        <section class="container-4">
+            <section class="box box-1 wrap">1</section>
+            <section class="box box-2 wrap">2</section>
+            <section class="box box-3 wrap">3</section>
+            <section class="box box-4 wrap">4</section>
+            <section class="box box-5 wrap">5</section>
+            <section class="box box-6 wrap">6</section>
+            <section class="box box-7 wrap">7</section>
+            <section class="box box-8 wrap">8</section>
+            <section class="box box-9 wrap">9</section> 
+        </section>
+        <p>flex-wrap:wrap the content will wrap to the right line below if there's not enough room vertically</p>            
+        <section class="container-5">
+            <section class="box box-1 wrap">1</section>
+            <section class="box box-2 wrap">2</section>
+            <section class="box box-3 wrap">3</section>
+            <section class="box box-4 wrap">4</section>
+            <section class="box box-5 wrap">5</section>
+            <section class="box box-6 wrap">6</section>
+            <section class="box box-7 wrap">7</section>
+            <section class="box box-8 wrap">8</section>
+            <section class="box box-9 wrap">9</section> 
+        </section>
+        <p>justify-content:flex-end</p>
+        <section class="container-6">
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+        </section>
+        <p>justify-content:flex-end this is the default</p>
+        <section class="container-7">
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+        </section>
+        <p>justify-content:center</p>
+        <section class="container-8">
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+        </section>
+        <p>justify-content:space-betweeen</p>
+        <section class="container-9">
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+        </section>
+        <p>justify-content:space-around</p>
+        <section class="container-10">
+            <section class="box box-1">1</section>
+            <section class="box box-2">2</section>
+            <section class="box box-3">3</section>
+            <section class="box box-4">4</section>
+        </section>
+    </body>
+</html>
