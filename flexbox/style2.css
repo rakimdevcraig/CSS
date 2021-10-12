@@ -52,6 +52,76 @@
 	align-items: flex-start;
 }
 
+.container-7 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
+}
+
+.container-8 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.container-9 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-end;
+}
+
+.container-10 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: flex-start;
+}
+
+.container-11 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+
+.container-12 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-around;
+}
+
+.container-13 {
+	display: flex;
+	border: 2px solid black;
+	height: 300px;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: space-between;
+}
+
 .box {
 	width: 300px;
 	height: 50px;
@@ -75,4 +145,24 @@
 
 .box4 {
 	background-color: red;
+}
+
+.box5 {
+	background-color: lime;
+}
+
+.box6 {
+	background-color: limegreen;
+}
+
+.box7 {
+	background-color: aqua;
+}
+
+.box8 {
+	background-color: blue;
+}
+
+.box9 {
+	background-color: purple;
 }
