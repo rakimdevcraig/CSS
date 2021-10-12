@@ -2,48 +2,31 @@
 <html>
     <head>
         <title>Flex Item Properties</title>
-        <link rel="stylesheet" href="style3.css">
+        <link rel="stylesheet" href="style4.css">
     </head>
     <body>
-        <h1>Align-self: Allows you to override align-items on individual flex items</h1>
-        <p>This allows us to move the 3rd box to the flex-start or end if we'd like</p>
+        <h1>Flex: grow shrink basis</h1>
+        <h1>flex-basis:specifies the ideal size of a flex item BEFORE it's placed into a flex container on the main axis. So that'd be width in a row and height on a column. Can be pixels or percent. Will shrink if there's no wrap. </h1>        
+        <p>But here we still have extra space to the right so we might want to give each element a bit of that space</p>
         <section class="container">
-            <section class="box box1">1</section>
-            <section class="box box2">2</section>
-            <section class="box box3 self">3</section>
-            <section class="box box4">4</section>
+            <section class="item one basis">ONE UNO</section>
+            <section class="item two basis">TWO DOS</section>
+            <section class="item three basis">THREE TRES</section>
         </section>
-        <h1>Flex:Defines how a flex item will grow or shrink to fit the available space in a container. Shorthand for grow,shrink and basis</h1>
-        <h1>When we have extra space how should we divide amongst everyone on the same line</h1>
-        <h1>flex-basis:specifies the ideal size of a flex item BEFORE it's placed into a flex container on the main axis. So that'd be width in a row and height on a column. Can be pixels or percent. Will shrink if there's no wrap. </h1>
-        <p>The basis is at 50% but there's no wrapping so they shrink to 25% for each box</p>
-        <section class="container-2">
-            <section class="basis-box box1">1</section>
-            <section class="basis-box box2">2</section>
-            <section class="basis-box box3">3</section>
-            <section class="basis-box box4">4</section>
+        <h1>Flex-grow: when we have extra space how should we divide it between all the divs on the same line</h1>
+        <p>Right here we have extra space to the right</p>
+        <p>We can use flex:1 or flex-grow:1  on each item to make all of the divs take up an even amount of the empty space</p>
+        <section class="container">
+            <section class="item one grow">ONE UNO</section>
+            <section class="item two grow">TWO DOS</section>
+            <section class="item three grow">THREE TRES</section>
         </section>
-        <p>The basis is at 50% and there's wrapping so the bottom 2 will wrap to the next line</p>
-        <section class="container-3">
-            <section class="basis-box box1">1</section>
-            <section class="basis-box box2">2</section>
-            <section class="basis-box box3">3</section>
-            <section class="basis-box box4">4</section>
+        <h1>flex-shrink: What do we do when our elements don't have the amount of space that we set in the flex basis</h1>
+        <p>How much of myself should I give up in proportion to the other item. The higher the number the more space you give up</p>
+        <section class="container">
+            <section class="item one shrink">ONE UNO</section>
+            <section class="item two dos shrink">TITLE......</section>
+            <section class="item three shrink">THREE TRES</section>
         </section>
-        <p>This is what makes basis different from width we have basis set to 50 so each box takes 50% of the space vertically</p>
-        <section class="container-4">
-            <section class="basis-box box1">1</section>
-            <section class="basis-box box2">2</section>
-            <section class="basis-box box3">3</section>
-            <section class="basis-box box4">4</section>
-        </section>
-        <h1>flex-grow:dictates how the unused space should be spread amongst flex items</h1>
-        <section class="container-5">
-            <section class="grow-box box1">1</section>
-            <section class="grow-box box2">2</section>
-            <section class="grow-box box3">3</section>
-            <section class="grow-box box4">4</section>
-        </section>
-        <h1>Order:Specifies the order used to lay out items in their flex container.Good for responsive layouts</h1>
     </body>
 </html>

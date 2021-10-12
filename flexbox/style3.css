@@ -1,88 +1,35 @@
 .container {
-	height: 200px;
-	border: 1px solid black;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
 }
 
-.container-2 {
-	height: 200px;
-	border: 1px solid black;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-
-.container-3 {
-	height: 200px;
-	border: 1px solid black;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-}
-
-.container-4 {
-	height: 200px;
-	border: 1px solid black;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	box-sizing: border-box;
-}
-
-.container-5 {
-	height: 200px;
-	border: 1px solid black;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	box-sizing: border-box;
-}
-
-.box {
+.item {
+	font-size: 40px;
+	border: 2px solid black;
 	padding: 5px;
-	text-align: center;
-	font-size: 20px;
-	width: 100px;
-	height: 30px;
 }
 
-.basis-box {
-	text-align: center;
-	font-size: 20px;
+.basis {
+	flex-basis: 400px;
+}
+
+.grow {
+	/* flex: 1; */
+	flex-grow: 1;
+}
+
+.shrink {
+	flex-shrink: 1;
+}
+
+.one {
+	flex-shrink: 5;
+}
+
+.dos {
 	flex-basis: 50%;
+	flex-shrink: 1;
 }
 
-.grow-box {
-	text-align: center;
-	font-size: 20px;
-}
-
-.box1 {
-	background-color: red;
-}
-
-.box2 {
-	background-color: limegreen;
-}
-
-.box3 {
-	background-color: purple;
-}
-
-.box4 {
-	background-color: aqua;
-}
-
-.self {
-	align-self: flex-start;
+.three {
+	flex-shrink: 5;
 }
