@@ -1,0 +1,88 @@
+.container {
+	height: 200px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-2 {
+	height: 200px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-3 {
+	height: 200px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.container-4 {
+	height: 200px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.container-5 {
+	height: 200px;
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+}
+
+.box {
+	padding: 5px;
+	text-align: center;
+	font-size: 20px;
+	width: 100px;
+	height: 30px;
+}
+
+.basis-box {
+	text-align: center;
+	font-size: 20px;
+	flex-basis: 50%;
+}
+
+.grow-box {
+	text-align: center;
+	font-size: 20px;
+}
+
+.box1 {
+	background-color: red;
+}
+
+.box2 {
+	background-color: limegreen;
+}
+
+.box3 {
+	background-color: purple;
+}
+
+.box4 {
+	background-color: aqua;
+}
+
+.self {
+	align-self: flex-start;
+}

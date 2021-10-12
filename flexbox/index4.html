@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flex Item Properties</title>
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+        <h1>Flex: grow shrink basis</h1>
+        <h1>flex-basis:specifies the ideal size of a flex item BEFORE it's placed into a flex container on the main axis. So that'd be width in a row and height on a column. Can be pixels or percent. Will shrink if there's no wrap. </h1>        
+        <p>But here we still have extra space to the right so we might want to give each element a bit of that space</p>
+        <section class="container">
+            <section class="item one basis">ONE UNO</section>
+            <section class="item two basis">TWO DOS</section>
+            <section class="item three basis">THREE TRES</section>
+        </section>
+        <h1>Flex-grow: when we have extra space how should we divide it between all the divs on the same line</h1>
+        <p>Right here we have extra space to the right</p>
+        <p>We can use flex:1 or flex-grow:1  on each item to make all of the divs take up an even amount of the empty space</p>
+        <section class="container">
+            <section class="item one grow">ONE UNO</section>
+            <section class="item two grow">TWO DOS</section>
+            <section class="item three grow">THREE TRES</section>
+        </section>
+        <h1>flex-shrink: What do we do when our elements don't have the amount of space that we set in the flex basis</h1>
+        <p>How much of myself should I give up in proportion to the other item. The higher the number the more space you give up</p>
+        <section class="container">
+            <section class="item one shrink">ONE UNO</section>
+            <section class="item two dos shrink">TITLE......</section>
+            <section class="item three shrink">THREE TRES</section>
+        </section>
+    </body>
+</html>
